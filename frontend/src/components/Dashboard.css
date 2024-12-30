@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f9;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full height for the container */
+  width: 100vw;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #0056b3; /* Blue Header */
+  color: white;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+}
+
+.dashboard-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.dashboard-nav ul li {
+  display: inline;
+}
+
+.dashboard-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.dashboard-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Section */
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+}
+
+.welcome-section {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.welcome-section h3 {
+  margin: 0;
+  color: #0056b3; /* Blue Highlight */
+}
+
+.welcome-section p {
+  margin: 10px 0 20px;
+  color: #555; /* Gray Text */
+}
+
+.dashboard-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dashboard-actions button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0056b3; /* Blue Buttons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dashboard-actions button:hover {
+  background-color: #004494; /* Darker Blue on Hover */
+}
+
+/* Footer */
+.dashboard-footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #0056b3;
+  color: white;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dashboard-nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .welcome-section {
+    padding: 20px;
+  }
+
+  .dashboard-actions button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

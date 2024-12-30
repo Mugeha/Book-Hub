@@ -1,0 +1,27 @@
+.register{
+   text-align: center;
+   /* margin-top: 50px; */
+   text-align: center;
+    /* margin-top: 50px; */
+    background-color: #ffffff;
+    width:80%;
+    height:70vh;
+    margin-top: 70px;
+    margin-right: 100px;
+    margin-left: 350px;
+    padding-top: 65px;
+    padding-right: 65px;
+    color: black;
+    border-radius: 5px;
+}
+.register h2{
+    color: black;
+}
+.inputs input{
+    /* width:100%;
+    padding-left: 20px;
+    padding-right: 20px; */
+    background-color: #ececec;
+    margin-left: 100px;
+    color: #000000;
+}
