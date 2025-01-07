@@ -36,6 +36,7 @@ const Dashboard = () => {
             <li><a href="/">Home</a></li>
             <li><a href="/books">Books</a></li>
             <li><a href="/favorites">Favorites</a></li>
+            <li><a href="/library">MyLibrary</a></li>
             <li><a href="/profile">Profile</a></li>
           </ul>
         </nav>

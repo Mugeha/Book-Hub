@@ -1,15 +1,15 @@
 const mongoose = require('mongoose');
 
-const librarySchema = new mongoose.Schema({
-  _id: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
-  library: [
+const LibrarySchema = new mongoose.Schema({
+  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+  books: [
     {
-      bookId: String,
-      title: String,
-      author: String,
-      description: String,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Book', // Reference the Book model
     },
   ],
 });
 
-module.exports = mongoose.model('Library', librarySchema);
+const Library = mongoose.model('Library', LibrarySchema);
+
+module.exports = Library;
